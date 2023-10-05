@@ -62,6 +62,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
+#define UP_Pin GPIO_PIN_0
+#define UP_GPIO_Port GPIOC
 #define LCD_TE_Pin GPIO_PIN_0
 #define LCD_TE_GPIO_Port GPIOA
 #define LCD_TE_EXTI_IRQn EXTI0_IRQn
@@ -71,12 +73,12 @@ void Error_Handler(void);
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
+#define RIGHT_Pin GPIO_PIN_0
+#define RIGHT_GPIO_Port GPIOB
 #define LCD_DCX_Pin GPIO_PIN_10
 #define LCD_DCX_GPIO_Port GPIOB
-#define CENTER_Pin GPIO_PIN_8
+#define CENTER_Pin GPIO_PIN_7
 #define CENTER_GPIO_Port GPIOC
-#define LEFT_Pin GPIO_PIN_9
-#define LEFT_GPIO_Port GPIOC
 #define MEM_SPI_CS__Pin GPIO_PIN_8
 #define MEM_SPI_CS__GPIO_Port GPIOA
 #define LCD_SPI_CS__Pin GPIO_PIN_9
@@ -85,14 +87,12 @@ void Error_Handler(void);
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
-#define DOWN_Pin GPIO_PIN_10
-#define DOWN_GPIO_Port GPIOC
-#define RIGHT_Pin GPIO_PIN_11
-#define RIGHT_GPIO_Port GPIOC
-#define UP_Pin GPIO_PIN_12
-#define UP_GPIO_Port GPIOC
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
+#define DOWN_Pin GPIO_PIN_4
+#define DOWN_GPIO_Port GPIOB
+#define LEFT_Pin GPIO_PIN_6
+#define LEFT_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
