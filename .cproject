@@ -23,7 +23,7 @@
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.1989443631" name="Floating-point unit" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.value.fpv4-sp-d16" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1771939414" name="Floating-point ABI" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1025751351" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="NUCLEO-L476RG" valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.711192718" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || NUCLEO-L476RG || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32L4xx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32L476xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32L476RGTX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || " valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.711192718" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || NUCLEO-L476RG || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32L4xx/Include | ../Drivers/CMSIS/Include | ../DISPLAY/App | ../DISPLAY/Target | ../Drivers/BSP/Components/mx25l6433f | ../Drivers/BSP/Components/Common | ../Drivers/BSP/Components/ili9341 ||  ||  || USE_HAL_DRIVER | STM32L476xx ||  || DISPLAY | Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32L476RGTX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || " valueType="string"/>
 							<option id="com.st.stm32cube.ide.mcu.debug.option.cpuclock.379944656" name="Cpu clock frequence" superClass="com.st.stm32cube.ide.mcu.debug.option.cpuclock" useByScannerDiscovery="false" value="80" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.1127940836" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
 							<builder buildPath="${workspace_loc:/GFX_Test}/Debug" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.1521935632" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
@@ -53,6 +53,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/GFX_Test/Drivers/BSP/Components/mx25l6433f}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/GFX_Test/Drivers/BSP/Components/ili9341}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/GFX_Test/DISPLAY/App}&quot;"/>
+									<listOptionValue builtIn="false" value="../DISPLAY/App"/>
+									<listOptionValue builtIn="false" value="../DISPLAY/Target"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/mx25l6433f"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/Common"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/ili9341"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1645884731" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -79,8 +84,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="DISPLAY"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>
 				</configuration>
@@ -109,7 +114,7 @@
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.616513691" name="Floating-point unit" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.value.fpv4-sp-d16" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.14686638" name="Floating-point ABI" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.87201061" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="NUCLEO-L476RG" valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.990727217" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || NUCLEO-L476RG || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32L4xx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32L476xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32L476RGTX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || " valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.990727217" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || NUCLEO-L476RG || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc | ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32L4xx/Include | ../Drivers/CMSIS/Include | ../DISPLAY/App | ../DISPLAY/Target | ../Drivers/BSP/Components/mx25l6433f | ../Drivers/BSP/Components/Common | ../Drivers/BSP/Components/ili9341 ||  ||  || USE_HAL_DRIVER | STM32L476xx ||  || DISPLAY | Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32L476RGTX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || " valueType="string"/>
 							<option id="com.st.stm32cube.ide.mcu.debug.option.cpuclock.290873061" name="Cpu clock frequence" superClass="com.st.stm32cube.ide.mcu.debug.option.cpuclock" useByScannerDiscovery="false" value="80" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.780368927" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
 							<builder buildPath="${workspace_loc:/GFX_Test}/Release" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.446078498" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
@@ -130,6 +135,11 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32L4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../DISPLAY/App"/>
+									<listOptionValue builtIn="false" value="../DISPLAY/Target"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/mx25l6433f"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/Common"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/ili9341"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.610827469" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -156,6 +166,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="DISPLAY"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>

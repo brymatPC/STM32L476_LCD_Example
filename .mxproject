@@ -52,6 +52,6 @@ ThirdPartyIpNumber=1
 ThirdPartyIpName#0=STMicroelectronics.X-CUBE-DISPLAY.3.0.0
 
 [ThirdPartyIp#STMicroelectronics.X-CUBE-DISPLAY.3.0.0]
-header=..\Drivers\BSP\Components\mx25l6433f\mx25l6433f.h;..\Drivers\BSP\Components\Common\mem.h;..\Drivers\BSP\Components\ili9341\ili9341.h;..\Drivers\BSP\Components\ili9341\ili9341_reg.h;..\Drivers\BSP\Components\Common\lcd.h;
-source=..\Drivers\BSP\Components\mx25l6433f\spi\mx25l6433f.c;..\Drivers\BSP\Components\ili9341\ili9341.c;..\Drivers\BSP\Components\ili9341\ili9341_reg.c;
+header=Drivers\BSP\Components\mx25l6433f\mx25l6433f.h;Drivers\BSP\Components\Common\mem.h;Drivers\BSP\Components\ili9341\ili9341.h;Drivers\BSP\Components\ili9341\ili9341_reg.h;Drivers\BSP\Components\Common\lcd.h;
+source=Drivers\BSP\Components\mx25l6433f\spi\mx25l6433f.c;Drivers\BSP\Components\ili9341\ili9341.c;Drivers\BSP\Components\ili9341\ili9341_reg.c;
 
